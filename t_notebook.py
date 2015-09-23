@@ -3,8 +3,8 @@
 from __future__ import print_function
 import os
 import glob
-from IPython import nbformat
-from IPython.nbconvert import PythonExporter
+import nbformat
+from nbconvert import PythonExporter
 import traceback
 
 current_path = os.path.dirname(os.path.realpath(__file__))
