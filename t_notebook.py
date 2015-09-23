@@ -2,6 +2,7 @@
 
 from __future__ import print_function
 import os
+import sys
 import glob
 import nbformat
 from nbconvert import PythonExporter
@@ -11,6 +12,7 @@ current_path = os.path.dirname(os.path.realpath(__file__))
 ipynb_path = current_path
 ipynbs = glob.glob(ipynb_path + '/*.ipynb')
 
+n_fail = 0
 for ipynb in ipynbs:
     with open(ipynb) as fh:
         nb = nbformat.reads(fh.read(), 4)
@@ -27,5 +29,9 @@ for ipynb in ipynbs:
         exec(source.encode())
         print('--', b_name, 'OK')
     except:
+        n_fail += 1
         print('--', b_name, '***Failed')
         traceback.print_exc()
+
+if n_fail > 0:
+    sys.exit(1)
