@@ -5,7 +5,7 @@ install:
   - echo deb http://ubuntu.openturns.org precise main | sudo tee /etc/apt/sources.list.d/openturns.list
   - sudo apt-get update
   - sudo apt-get -y install python-openturns
-  - pip install nbconvert nbformat
+  - pip install ipython nbconvert nbformat
 
 script:
   - python t_notebook.py
