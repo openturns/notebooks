@@ -5,4 +5,4 @@
 OpenTURNS IPython Notebooks
 ===========================
 
-- http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/axial_stressed_beam.ipynb
+- `Axial stressed beam <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/axial_stressed_beam.ipynb>`_
