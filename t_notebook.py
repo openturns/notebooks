@@ -4,8 +4,13 @@ from __future__ import print_function
 import os
 import sys
 import glob
-import nbformat
-from nbconvert import PythonExporter
+try:
+    import nbformat
+    import nbconvert
+except ImportError:
+    from IPython import nbformat
+    from IPython import nbconvert
+
 import traceback
 
 current_path = os.path.dirname(os.path.realpath(__file__))
@@ -17,7 +22,7 @@ for ipynb in ipynbs:
     with open(ipynb) as fh:
         nb = nbformat.reads(fh.read(), 4)
 
-    exporter = PythonExporter()
+    exporter = nbconvert.PythonExporter()
 
     # source is a tuple of python source code
     # meta contains metadata
