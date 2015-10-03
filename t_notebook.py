@@ -15,7 +15,8 @@ import traceback
 
 current_path = os.path.dirname(os.path.realpath(__file__))
 ipynb_path = current_path
-ipynbs = glob.glob(ipynb_path + '/*.ipynb')
+ipynbs = [ipynb for ipynb in glob.glob(ipynb_path + '/*.ipynb')
+          if 'dont_test_me' not in ipynb]
 
 n_fail = 0
 for ipynb in ipynbs:
