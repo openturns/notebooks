@@ -6,7 +6,7 @@ install:
   - sudo apt-get update
   - sudo apt-get -y install python-openturns
   - sudo apt-get -y install python-pip
-  - pip install ipython ipyparallel nbconvert nbformat --user
+  - pip install ipython nbconvert nbformat --user
 
 script:
   - python t_notebook.py
