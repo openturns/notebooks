@@ -11,4 +11,5 @@ OpenTURNS Jupyter Notebooks
 - `Multithreaded wrapper using concurrent.futures <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/multithreaded_wrapper.ipynb>`_
 - `Parallel computing using ipyparallel <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/ipython_parallel_function_skiptest.ipynb>`_
 - `Field of Sobol indices <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/sobol_field.ipynb>`_
+- `Noisy kriging obeservations <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/noisy_kriging.ipynb>`_
 
