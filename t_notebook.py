@@ -12,6 +12,7 @@ except ImportError:
     from IPython import nbconvert
 
 import traceback
+import time
 
 current_path = os.path.dirname(os.path.realpath(__file__))
 ipynb_path = current_path
@@ -32,8 +33,10 @@ for ipynb in ipynbs:
     b_name = os.path.basename(ipynb)
     print('--', b_name)
     try:
+        t0 = time.time()
         exec(source.encode())
-        print('--', b_name, 'OK')
+        elapsed = time.time() - t0
+        print('--', b_name, 'OK T=', round(elapsed, 2), 's')
     except:
         n_fail += 1
         print('--', b_name, '***Failed')
