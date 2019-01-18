@@ -1,0 +1,8 @@
+name: notebooks
+channels:
+  - conda-forge
+dependencies:
+  - openturns
+  - matplotlib
+  - ipyparallel
+
