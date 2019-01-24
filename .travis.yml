@@ -1,15 +1,13 @@
-dist: trusty
+language: generic
 sudo: required
 
 install:
-  - curl http://ubuntu.openturns.org/openturns.org-repo.key | sudo apt-key add -
-  - echo deb http://ubuntu.openturns.org trusty main | sudo tee /etc/apt/sources.list.d/openturns.list
-  - sudo apt-get update
-  - sudo apt-get -y install python-openturns
-  - sudo apt-get -y install python-pip
-  - sudo rm -r /opt/python/*
-  - pip install ipython nbconvert nbformat --user
-  - pip install futures --user
+  - wget -c --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -P /tmp
+  - bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - conda env update -f environment.yml
+  - source activate notebooks
+  - conda install -y ipython nbconvert nbformat
 
 script:
   - python t_notebook.py
