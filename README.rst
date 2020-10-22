@@ -16,4 +16,5 @@ Some notebooks that we cannot include in the `Examples section <http://openturns
 - `Parallel computing using ipyparallel <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/ipython_parallel_function_skiptest.ipynb>`_
 - `Field of Sobol indices <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/sobol_field.ipynb>`_
 - `Noisy kriging observations <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/noisy_kriging_skiptest.ipynb>`_
+- `OpenTURNS 1.16 release highlights <http://nbviewer.ipython.org/github/openturns/notebooks/blob/master/release_highlights_1_16.ipynb>`_
 
