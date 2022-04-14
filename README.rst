@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/openturns/notebooks.svg?branch=master
-    :target: https://travis-ci.org/openturns/notebooks
+.. image:: https://github.com/openturns/notebooks/actions/workflows/build.yml/badge.svg?branch=master
+    :target: https://github.com/openturns/notebooks/actions/workflows/build.yml
 
 .. image:: https://mybinder.org/badge_logo.svg
     :target: https://mybinder.org/v2/gh/openturns/notebooks.git/master
